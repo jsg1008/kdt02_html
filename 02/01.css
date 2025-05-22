@@ -1,0 +1,97 @@
+/* 전체 선택자*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 부모 자식 선택자*/
+nav>ul {
+    background-color: rgb(96, 95, 160);
+    color: azure;
+}
+
+footer>ul {
+    background-color: black;
+    color: azure;
+}
+
+/* 속성 선택자 */
+h2[class] {
+    color: yellow;
+}
+
+/* 클래스 선택자 */
+.g1 {
+    /* 배경색 */
+    background-color: blue;
+    color: white;
+    /* 가로 세로 */
+    width: 50%;
+    height: 80px;
+
+    /* 안쪽 여백 (4개를 순서대로 하면 위, 오른쪽, 아래쪽, 왼쪽*/
+    padding: 20px;
+
+    /* 바깥쪽 여백 */
+    margin: 20px;
+
+    /* 박스 속성 부여 */
+    box-sizing: border-box;
+
+    display : flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.g2 {
+    background-color: red;
+    color: white;
+}
+
+/* id 선택자 */
+#html {
+    background-color: blueviolet;
+    color: white
+}
+
+/* 그룹 */
+#s1,
+#s2 {
+    background-color: grey;
+}
+
+/* 인라인 스타일 변경 */
+/* strong {
+    display: inline-block;
+    background-color: rgb(43, 180, 199);
+    color: whitesmoke;
+    width: 50%;
+    height: 40px;
+} */
+
+/* 구글 폰트 */
+article > p {
+    font-family: "Nanum Pen Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.fbox {
+    display : flex ;
+    flex-direction: row ;
+}
+
+.fbox > div {
+    margin-right : 20px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+ul  {
+   list-style: none;
+   display: flex;
+}

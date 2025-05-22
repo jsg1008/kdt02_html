@@ -1,0 +1,43 @@
+form {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  border: 1px dotted gainsboro;
+}
+
+.mdiv {
+  width: 45%;
+  height: 50px;
+  margin-left: 5%;
+}
+
+.mdiv> select {
+  width: 80%;
+  height: 40px;
+}
+
+.mdiv > input{
+  width: 60%;
+  height: 30px;
+}
+ 
+[readonly] {
+  background-color: rgb(167, 236, 185);
+}
+
+label {
+  font-weight: 5px;
+}
+
+[for = txt1] {  
+  color: brown ;
+}
+
+[for = txt2] {
+  color: green ;
+}
+
+input {
+  background-color: rgb(235, 180, 235) ;
+}

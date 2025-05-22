@@ -1,4 +1,125 @@
- header {
-            background-color: rgb(96, 95, 160);
-            color: azure;
-        }
+* {
+    padding: 0px;
+    /*안쪽 여백*/
+    margin: 0px;
+    /*바깥 여백*/
+}
+
+body {
+    width: 80%;
+    margin-left: 10%;
+    /*왼쪽으로 여백을 줌으로써 자동으로 오른쪽도 여백을 줌*/
+}
+
+header {
+    background-color: aliceblue;
+    box-sizing: border-box;
+    /*박스의 시작점을 지정하게 해줌*/
+}
+
+nav ul, li {
+    list-style: none;
+    /*목록 표시를 없앰*/
+    display: flex;
+}
+
+header {
+    display: flex;
+    /*헤더 박스를 유연하게*/
+    justify-content: space-between;
+    /*가로축 수평 정렬하여 양쪽으로 나눔*/
+    padding: 10px;
+}
+
+nav li {
+    padding: 5px;
+    margin: 2px;
+}
+
+article {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+article h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    /*중앙 정렬*/
+
+}
+
+article p {
+    padding: 30px 50px;
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+section {
+    margin: 1.5%;
+    border-radius: 15px;
+}
+
+a {
+    text-decoration: none;
+    /*하이퍼링크의 밑줄이 없어짐*/
+    background-color: blueviolet;
+    align-items: end;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: rgb(51, 158, 197);
+}
+
+nav {
+    display: flex;
+}
+
+.textred {
+    color: red;
+    text-decoration: underline;
+}
+
+img {
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+.fbox {
+    display: flex;
+}
+
+.fbox>div {
+    margin-right: 20px;
+    width: 20%;
+}
+
+.fbox>p {
+    height: 150px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section>.g1 {
+    background-color: rgb(170, 114, 222);
+    color: white;
+    text-align: center;
+}
