@@ -1,0 +1,66 @@
+#mvMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.divDt, .mvul {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.divDt {
+  background-color: aliceblue;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.mvul {
+  list-style: none;
+  width: 80%;
+}
+
+.mvul > li {
+  display: flex; 
+  border: none;
+  margin: 1px;
+  font-size: 12px;
+}
+
+.mvul > li:hover {
+  color: brown;
+}
+
+.spRank {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 20px;
+  height: 20px;
+  background-color: rgb(167, 167, 213);
+  color: white;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 2px;
+}
+
+.spInten {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: none;
+  color: black;
+  margin-right: 10px;
+  padding: 2px;
+}
+
+.spMv {
+  width: 80%;
+}
