@@ -28,37 +28,26 @@
   display: flex; 
   border: none;
   margin: 1px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .mvul > li:hover {
-  color: brown;
+  color: rgb(26, 241, 15);
 }
 
-.spRank, .sp, .spR, .spB {
+.spRank {
   display: inline-flex;
   justify-content: center;
   align-items: center;
 
-  width: 20px;
-  height: 20px;
-}
-
-.spR {
-  color: red;
-}
-
-.spB {
-  color: blue;
-}
-
-.spRank {
- 
-  background-color: blue;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(29, 197, 235);
   color: white;
   border-radius: 5px;
   margin-right: 10px;
   padding: 2px;
+  font-size: large;
 }
 
 .spMv {
@@ -67,4 +56,7 @@
   align-items: center;
   width: 80%;
 }
- 
+
+.sp0 { color: red; font-size: large;}
+.sp1 { color: blue; font-size: large;}
+.sp2 { color: gray; font-size: large;}
