@@ -4,11 +4,12 @@ const yesterday = () => {
   return tttday.toISOString().slice(0, 10); //tttday 날짜 객체를 ISO 8601 형식의 문자열로 변환. slice를 안한다면 시간 정보도 다 들어가게 됨. 그래서 10개 이후로는 자르는것.
 }
 
+ 
 
 
-const getMvList = (dt, ul) => { // dt와 ul이라는 매개변수를 받는 것것
-  console.log("dt=", dt) 
-  const url = "https://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=2a350cfbca6c428eb04c71e21cc681e7&targetDt=" + dt;
+const getMvList = (dt, ul, multiMovieYn) => { // dt와 ul이라는 매개변수를 받는 것
+  console.log("dt=", dt, multiMovieYn) 
+  const url = "https://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=2a350cfbca6c428eb04c71e21cc681e7&targetDt=" + dt + "&"+ multiMovieYn ;
   
   // console.log(url)
   fetch(url)  //api를 요청하는 것
@@ -16,6 +17,7 @@ const getMvList = (dt, ul) => { // dt와 ul이라는 매개변수를 받는 것�
   .then(data => {
     const dailyBoxOfficeList = data.boxOfficeResult.dailyBoxOfficeList ; //일일 박스오피스목록을 추출하는 것
     console.log(dailyBoxOfficeList)
+    
     const mvList = dailyBoxOfficeList.map((item) => { //영화 정보 객체들의 배열을 li형태 HTML문자열로 바꿔주는 역할. 각 li에는 영화정보가 들어감. 
 
     let rankChangeHTML = '';
@@ -56,6 +58,14 @@ document.addEventListener("DOMContentLoaded", ()=>{ //이벤트 초기화 작업
 // 다른 요소 하나는 ul.즉 리스트 영역. 
 
   dtIn.addEventListener("change" , () => { //dtIn 값이 바뀌면 다시 한번 영화목록 가져오는 함수가 실행됨
+    getMvList(dtIn.value.replaceAll('-',''), ul) ;
+  });
+  bt.addEventListener("click", (e)=>{
+    e.preventDefault();
+    const rVal=document.querySelector("[type=radio]:checked").value;
+    console.log(rVal);
+  });
+  bt.addEventListener("click" , () => { 
     getMvList(dtIn.value.replaceAll('-',''), ul) ;
   });
   

@@ -60,3 +60,11 @@
 .sp0 { color: red; font-size: large;}
 .sp1 { color: blue; font-size: large;}
 .sp2 { color: gray; font-size: large;}
+
+form {
+  display: flex;
+}
+
+main > div {
+  display: flex;
+}
