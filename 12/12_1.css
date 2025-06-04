@@ -1,0 +1,83 @@
+#pMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.formDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80%;
+  height: 60px;
+  background-color: aliceblue;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.formDiv > input {
+  height: 25px;
+}
+
+.formDiv > button {
+  width: 100px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.content {
+  width: 80%;
+  height: 60vh;
+  padding: 10px;
+  overflow-y: auto;
+
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  /* border: 1px solid black; */
+}
+
+.card {
+  width: 30%;
+  height: 190px;
+
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+
+  margin: 5px;
+}
+
+.cardImg > img {
+  width: 100%;
+}
+
+.cardDiv {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.sp1, .sp2 {
+  display: flex;
+}
+
+.sp1 {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.sp2 {
+  font-size: 12px;
+}
