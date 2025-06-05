@@ -16,7 +16,7 @@ const yesterday = () => {  // 어제 날짜를 yyyy-mm-dd로 반환하는 함수
 
 const getPoser = (mvNm) => { //영화 이름을 받아서 포스터 이미지를 가져오는 함수
   console.log("getPoster", mvNm); //디버깅용 영화 이름 출력
-  const postapikey = "b42483d9af611184a5e87b9980e11075"; //api키
+  const postapikey = ""; //api키
   
   let url2 = `https://api.themoviedb.org/3/search/movie?api_key=${postapikey}&query=${mvNm}`; //영화 이름 검색 api url생성
   const poster = document.querySelector(".divPost"); //html에서 .divPost 클래스 요소를 찾음
