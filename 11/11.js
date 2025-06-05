@@ -16,7 +16,7 @@ const yesterday = () => {
 
 const getPoster = (mvNm) => {
   console.log("getPoster" , mvNm);
-  const tmdbApi = "b42483d9af611184a5e87b9980e11075" ;
+  const tmdbApi = "" ;
   let url = `https://api.themoviedb.org/3/search/movie?api_key=${tmdbApi}&query=${mvNm}` ;
   const poster = document.querySelector(".poster") ;
 
