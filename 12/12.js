@@ -1,6 +1,6 @@
 //데이터 가져오기 함수
 const getData = (txtKw, content) => {
-    const apikey = "s8VsZNvdipWkAE%2BTVXO0AdTTrG9I%2BnuchpAGg7dJhVeSHdvqhNKhCIF15TOQx7XRSgofq6gM3NqIQBeEeEGkFg%3D%3D" ;
+    const apikey = "" ;
     const baseurl = "https://apis.data.go.kr/B551011/PhotoGalleryService1/gallerySearchList1?";
     let url = `${baseurl}serviceKey=${apikey}&numOfRows=10&pageNo=1&MobileOS=ETC&MobileApp=AppTest&arrange=A&keyword=${txtKw.value}&_type=json`;
     console.log(url);
